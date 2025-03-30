@@ -81,9 +81,3 @@ https://dummyjson.com/users
 📝 Contribution  
 Feel free to contribute! Open a pull request if you have improvements.  
 
----
-
-**Next Steps**  
-📌 **Push this updated README.md** to your GitHub repository.  
-📌 **Make sure your latest code is pushed**.  
-📌 **Submit your GitHub link**.  
