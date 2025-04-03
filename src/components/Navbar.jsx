@@ -1,9 +1,6 @@
-import { useState } from "react";
-import { Sun, User } from "lucide-react";
+import { Sun, Moon, User } from "lucide-react";
 
-const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
-
+const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <nav className={`p-4 ${darkMode ? "bg-gray-900 text-white" : "bg-gray-100 text-gray-900"} shadow-md`}>
       <div className="container mx-auto flex justify-between items-center">
@@ -24,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-4">
           <User className="w-5 h-5 cursor-pointer" />
           <button onClick={() => setDarkMode(!darkMode)}>
-            <Sun className="w-5 h-5 text-yellow-500 cursor-pointer" />
+            {darkMode ? <Sun className="w-5 h-5 text-yellow-500" /> : <Moon className="w-5 h-5 text-gray-500" />}
           </button>
         </div>
       </div>

@@ -16,15 +16,16 @@ const TalentProfileCard = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white py-10 px-6 w-full">
+    <div className=" bg-dark py-10 px-6 ">
+    <div className="bg-black text-white py-10 px-8 rounded-lg">
       <div className="flex justify-between items-center">
         <h2 className="text-2xl font-semibold">Top Talent</h2>
         <a href="#" className="text-blue-400">View all →</a>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
         {profiles.slice(0, 4).map((profile) => (
-          <div key={profile.id} className="bg-gray-900 p-4 rounded-lg shadow-lg">
+          <div key={profile.id} className="bg-gray-900 px-4 py-10 rounded-lg shadow-lg">
             <img
               src={profile.image}
               alt={profile.firstName}
@@ -40,16 +41,18 @@ const TalentProfileCard = () => {
             <div className="flex flex-wrap justify-center gap-2 mt-3">
               {profile.company.department && (
                 <span className="bg-gray-700 px-2 py-1 rounded-full text-xs">{profile.company.department}</span>
+                
               )}
             </div>
 
             {/* Employment Type */}
             <div className="mt-4">
-              <span className="bg-green-500 text-black px-3 py-1 rounded-full text-sm">{profile.company.name}</span>
+              <span className="bg-green-500 text-black px-3 py-1 rounded-full text-sm  flex justify-center items-center mx-10">{profile.company.name}</span>
             </div>
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
