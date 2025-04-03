@@ -20,7 +20,7 @@ const TalentSearch = () => {
   );
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen p-8">
+    <div className="min-h-screen p-8 ">
       {/* Title */}
       <h1 className="text-3xl font-bold mb-6">Find Your Next Team Member</h1>
 
