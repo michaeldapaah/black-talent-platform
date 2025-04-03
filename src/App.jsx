@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import TalentProfile from "./components/TalentProfileCard"
+import TalentSearch from "./components/TalentSearch";
 import "./index.css"; // If you use Tailwind, keep this
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <HeroSection />
       <TalentProfile />
+      <TalentSearch />
     </div>
   );
 }
