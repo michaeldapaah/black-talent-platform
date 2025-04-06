@@ -38,8 +38,8 @@ The goal is to **celebrate Black excellence** and provide businesses with an eas
  ┃ ┃ ┣ 📜 Footer.jsx
  ┃ ┃ ┣ 📜 TalentProfileCard.jsx
  ┃ ┃ ┣ 📜 TopTalentSection.jsx
- ┃ ┃ ┣ 📜 SearchFilter.jsx
- ┃ ┃ ┣ 📜 JobListings.jsx
+ ┃ ┃ ┣ 📜 TalentSearch.jsx
+ ┃ ┃ ┣ 📜 JobLBoard.jsx
  ┃ ┃ ┗ 📜 Dashboard.jsx
  ┃ ┣ 📂 data
  ┃ ┃ ┗ 📜 talentData.js  # Mock data or API integration
@@ -56,7 +56,7 @@ The goal is to **celebrate Black excellence** and provide businesses with an eas
 
 **1️⃣ Clone the Repository**  
 ```sh
-git clone https://github.com/YOUR_GITHUB_USERNAME/black-talent-platform.git
+git clone https://github.com/michaeldapaaah/black-talent-platform.git
 cd black-talent-platform
 ```
 

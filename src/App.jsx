@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import TalentProfile from "./components/TalentProfileCard"
 import TalentSearch from "./components/TalentSearch";
+import JobBoard from "./components/JobBoard";
+import Footer from "./components/Footer";
 import "./index.css"; // If you use Tailwind, keep this
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
       <HeroSection />
       <TalentProfile />
       <TalentSearch />
+      <JobBoard />  
+      <Footer />
     </div>
   );
 }
