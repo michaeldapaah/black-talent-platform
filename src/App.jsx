@@ -13,6 +13,11 @@ function App() {
   });
 
   useEffect(() => {
+    document.title = "Black Talent";
+    const link = document.querySelector('link[rel="icon"]');
+    if (link) {
+      link.href = './src/assets/black.ico'
+    }
     localStorage.setItem("darkMode", darkMode);
     if (darkMode) {
       document.documentElement.classList.add("dark");
