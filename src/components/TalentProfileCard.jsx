@@ -6,7 +6,7 @@ const TalentProfileCard = () => {
 
   useEffect(() => {
     axios
-      .get("https://dummyjson.com/users") // Using structured API
+      .get(process.env.REACT_APP_API_URL) // Using structured API
       .then((response) => {
         setProfiles(response.data.users);
       })
